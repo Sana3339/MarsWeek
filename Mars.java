@@ -16,10 +16,10 @@ public class Mars {
 
     if (landingLocation.equalsIgnoreCase("The Plain")) {
       System.out.println("Bbzzz Landing on the Plain");
-
     } else {
       System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
     }
+    new GuessingGame();
   }
 
   public static boolean landingCheck (int minutesLeft) throws InterruptedException {
