@@ -6,7 +6,7 @@ public class Mars {
     int shipPopulation = 300;
     double meals = 4000.00;
     boolean landing = landingCheck(5);
-
+    
     double mealsAfterLanding = meals - (2 * (shipPopulation * 0.75));
     System.out.println(mealsAfterLanding); 
     meals *= 1.5;
@@ -20,6 +20,8 @@ public class Mars {
       System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
     }
     new GuessingGame();
+    new MarsExpedition();
+    new FindingsList();
   }
 
   public static boolean landingCheck (int minutesLeft) throws InterruptedException {
